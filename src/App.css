@@ -1,38 +1,52 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar .exit-btn {
+  background: none;
+  border: 1px solid #dc3545;
+  padding: 10px 20px;
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.welcome-container,
+.quiz-container,
+.result-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand {
+  color: #e83e8c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  padding: 10px 20px;
+  background-color: #e83e8c;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.options label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options input[type='radio'] {
+  margin-right: 10px;
 }
